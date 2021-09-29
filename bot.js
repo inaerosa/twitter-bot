@@ -1,8 +1,9 @@
 console.log('The bot is starting')
 
-const t = require('twit');
+const Twit = require('twit');
 const config = require('./config');
 
+var T = new Twit(config)
 //search
 var params = {
     q: 'unicorn',
