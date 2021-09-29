@@ -17,3 +17,10 @@ function gotData(err,data,response){
 //    console.log(tweets[i].text);
   }
 }
+
+//post
+
+var tweet = {
+    status: '#tweeting from node.js'
+  }
+  
