@@ -25,7 +25,7 @@ function tweetIt() {
   var r = Math.floor(Math.random()*100);
 
   var tweet = {
-    status: `here is a random number: ${r} in node.js`
+    status: `here is a random number ${r} in node.js`
   }
 
   T.post('statuses/update', tweet, tweeted)
@@ -41,4 +41,5 @@ function tweetIt() {
 }
 
 tweetIt()
+setInterval(tweetIt, 1000*20)
 
