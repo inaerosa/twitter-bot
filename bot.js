@@ -1,6 +1,6 @@
 console.log('The bot is starting')
 
-const Twit = require('twit');
+const t = require('twit');
 const config = require('./config');
 
 //search
@@ -24,7 +24,7 @@ tweetIt();
 function tweetIt() {
 
     var tweet = {
-      status: '#tweeting from node.js'
+      status: `'#tweeting from node.js'`
     }
   
     T.post('statuses/update', tweet, tweeted)
